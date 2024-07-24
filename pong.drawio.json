@@ -1,0 +1,182 @@
+[
+    {
+        "file": "pong.drawio",
+        "name": "experiment",
+        "children": [
+            {
+                "name": "AND",
+                "id": 12
+            },
+            {
+                "name": "NOR",
+                "id": 19
+            },
+            {
+                "name": "INV",
+                "id": 26
+            },
+            {
+                "name": "JK",
+                "id": 28
+            }
+        ],
+        "connections": [
+            {
+                "dir": 0,
+                "source": {
+                    "name": "",
+                    "id": 0
+                },
+                "source_port": "A",
+                "target": {
+                    "name": "AND",
+                    "id": 12
+                },
+                "target_port": "a"
+            },
+            {
+                "dir": 0,
+                "source": {
+                    "name": "",
+                    "id": 0
+                },
+                "source_port": "B",
+                "target": {
+                    "name": "AND",
+                    "id": 12
+                },
+                "target_port": "b"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "AND",
+                    "id": 12
+                },
+                "source_port": "c",
+                "target": {
+                    "name": "JK",
+                    "id": 28
+                },
+                "target_port": "k"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "INV",
+                    "id": 26
+                },
+                "source_port": "b",
+                "target": {
+                    "name": "NOR",
+                    "id": 19
+                },
+                "target_port": "a"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "AND",
+                    "id": 12
+                },
+                "source_port": "c",
+                "target": {
+                    "name": "JK",
+                    "id": 28
+                },
+                "target_port": "r"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "AND",
+                    "id": 12
+                },
+                "source_port": "c",
+                "target": {
+                    "name": "JK",
+                    "id": 28
+                },
+                "target_port": "j"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "NOR",
+                    "id": 19
+                },
+                "source_port": "c",
+                "target": {
+                    "name": "JK",
+                    "id": 28
+                },
+                "target_port": "s"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "AND",
+                    "id": 12
+                },
+                "source_port": "c",
+                "target": {
+                    "name": "INV",
+                    "id": 26
+                },
+                "target_port": "a"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "AND",
+                    "id": 12
+                },
+                "source_port": "c",
+                "target": {
+                    "name": "JK",
+                    "id": 28
+                },
+                "target_port": "c"
+            },
+            {
+                "dir": 1,
+                "source": {
+                    "name": "AND",
+                    "id": 12
+                },
+                "source_port": "c",
+                "target": {
+                    "name": "NOR",
+                    "id": 19
+                },
+                "target_port": "b"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "JK",
+                    "id": 28
+                },
+                "source_port": "~q",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "~Q"
+            },
+            {
+                "dir": 2,
+                "source": {
+                    "name": "JK",
+                    "id": 28
+                },
+                "source_port": "q",
+                "target": {
+                    "name": "",
+                    "id": 0
+                },
+                "target_port": "Q"
+            }
+        ]
+    }
+]
